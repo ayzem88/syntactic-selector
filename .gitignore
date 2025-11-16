@@ -42,14 +42,22 @@ desktop.ini
 *.log
 *.tmp
 *.xlsx
-!المركبات_المحسنة.xlsx
 *.json
-!البيانات_التفاعلية.json
-!البيانات_التفاعلية_مختصرة.json
 cache/
 temp/
 output/
 نتائج/
+
+# البيانات والمدونات الكبيرة - لا ترفع
+# ملفات أكبر من 10MB
+المدونة/*.txt
+*.xlsx
+*.json
+# السماح بالملفات الصغيرة
+!stop_words.txt
+!requirements*.txt
+!README*.txt
+!كيفية_الاستخدام.txt
 
 # Test files
 .pytest_cache/
